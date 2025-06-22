@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Using the provided palette */
+    --background: #ffffff; /* white background */
+    --foreground: #335F6F; /* dark text */
+    --card: #ffffff;
+    --card-foreground: #1B708F;
+    --popover: #ffffff;
+    --popover-foreground: #335F6F;
+    --primary: #62B7D5;
+    --primary-foreground: #ffffff;
+    --secondary: #66BEDE;
+    --secondary-foreground: #24424D;
+    --muted: #539AB3;
+    --muted-foreground: #335F6F;
+    --accent: #66BEDE;
+    --accent-foreground: #24424D;
+    --destructive: #24424D;
+    --destructive-foreground: #ffffff;
+    --border: #24424D;
+    --input: #24424D;
+    --ring: #62B7D5;
+    --chart-1: #62B7D5;
+    --chart-2: #539AB3;
+    --chart-3: #66BEDE;
+    --chart-4: #66BEDE;
+    --chart-5: #1B708F;
+    --radius: 0.5rem;
+    --sidebar-background: #ffffff;
+    --sidebar-foreground: #335F6F;
+    --sidebar-primary: #1B708F;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #62B7D5;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #24424D;
+    --sidebar-ring: #62B7D5;
+  }
+  
+  /* Optionally, update dark mode to use the same palette if needed */
+  .dark {
+    --background: #ffffff;
+    --foreground: #335F6F;
+    --card: #ffffff;
+    --card-foreground: #1B708F;
+    --popover: #ffffff;
+    --popover-foreground: #335F6F;
+    --primary: #62B7D5;
+    --primary-foreground: #ffffff;
+    --secondary: #66BEDE;
+    --secondary-foreground: #24424D;
+    --muted: #539AB3;
+    --muted-foreground: #335F6F;
+    --accent: #66BEDE;
+    --accent-foreground: #24424D;
+    --destructive: #24424D;
+    --destructive-foreground: #ffffff;
+    --border: #24424D;
+    --input: #24424D;
+    --ring: #62B7D5;
+    --chart-1: #62B7D5;
+    --chart-2: #539AB3;
+    --chart-3: #66BEDE;
+    --chart-4: #66BEDE;
+    --chart-5: #1B708F;
+    --radius: 0.5rem;
+    --sidebar-background: #ffffff;
+    --sidebar-foreground: #335F6F;
+    --sidebar-primary: #1B708F;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #62B7D5;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #24424D;
+    --sidebar-ring: #62B7D5;
+  }
+  
+  * {
+    @apply border-[var(--border)];
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+  }
+}
